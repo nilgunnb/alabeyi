@@ -1,0 +1,198 @@
+#introduction{
+    animation: fade-up 0.9s;
+}
+
+.introduction-text{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding:2% 3% 2% 3%;
+}
+.left-itext h2{
+    color: var(--primary-color);
+    font-size: 30px;
+    font-family: MediumFONT;
+}
+.right-itext a{
+    position: relative;
+    padding:10px 6px 10px 15px;
+    font-size: 20px;
+    letter-spacing: 0.5px;
+    font-family: MediumFONT;
+    color: var(--primary-color);
+    transition: .2s;
+    padding: 0 10px;
+}
+
+.right-itext a::after{
+    content: '';
+    position: absolute;
+    background-color: var(--primary-color);
+    height: 3px;
+    width: 0;
+    left: 0;
+    bottom: -10px;
+    transition: 0.3s;
+}
+
+.right-itext a:hover::after{
+    width: 100%;
+}
+
+.right-itext i{
+    color: var(--primary-color);
+}
+.right-itext a:hover{
+    color: rgb(190, 187, 187);
+    
+}
+
+.team-03{
+    border: 5px solid;
+    border-color: var(--primary-color);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 15px;
+    color: var(--primary-color);
+
+}
+.team-03 h1{
+    font-family: MediumFONT;
+    font-size: 50px;
+    animation: fade-down 0.9s;
+}
+body{
+    background-image: url('../media/background2.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    transition: .5s;
+}
+
+.logo-box{
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 10%;
+}
+
+.logo-box img{
+    width: 100%;
+    border: 3px solid var(--primary-color)
+}
+
+:root{
+    --primary-color: black;
+    --secondary-color: #fff;
+}
+
+.dark-theme{
+    --primary-color: #fff;
+    --secondary-color: black;
+    background-image: url('../media/a057afe4ded4705c350f58f5be2521af\ \(2\)_LE_auto_x2.jpg');
+    transition: .5s;
+}
+
+#menu{
+    display: none;
+    font-size: 30px;
+    cursor: pointer;
+}
+
+.sidenav {
+    height: 100%; 
+    width: 0; 
+    position: fixed; 
+    z-index: 1; 
+    top: 13%; 
+    right: 0;
+    background-color: #111; 
+    overflow-x: hidden; 
+    padding-top: 60px; 
+    transition: 0.5s; 
+  }
+
+  .sidenav a {
+    padding: 8px 8px 8px 32px;
+    font-size: 25px;
+    color: #fff;
+    display: block;
+    transition: 0.3s;
+    font-family: MediumFONT;
+  }
+  
+  
+  .sidenav a:hover {
+    color: #b3aeae;
+  }
+
+@media only screen and (max-width: 600px) {
+    .right-itext a{
+        display: none;
+    }
+    .right-itext i{
+        display: none;
+    }
+    #menu{
+        display: inline-block;
+    }
+    .team-03 h1{
+        font-size: 20px;
+    }
+    .logo-box{
+        width: 30%;
+    }
+    
+}
+
+@media only screen and (min-width: 600px) and (max-width: 768px){
+    .right-itext a{
+        display: none;
+    }
+    .right-itext i{
+        display: none;
+    }
+    #menu{
+        display: inline-block;
+    }
+    .team-03 h1{
+        font-size: 20px;
+    }
+    .logo-box{
+        width: 20%;
+    }
+}
+
+
+@media only screen and (min-width: 768px) and (max-width: 992px) {
+    .right-itext a{
+        display: none;
+    }
+    .right-itext i{
+        display: none;
+    }
+    #menu{
+        display: inline-block;
+    }
+    .team-03 h1{
+        font-size: 30px;
+    }
+    .logo-box{
+        width: 20%;
+    }
+    
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1200px) {
+    .team-03 h1{
+        font-size: 40px;
+    }
+    .logo-box{
+        width: 15%;
+    }
+    
+}
